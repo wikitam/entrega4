@@ -1,0 +1,83 @@
+/***********
+Metodología BEM
+************/
+
+/* 
+BLOQUE
+ELEMENTO
+MODIFICADOR*/
+
+/* BLOQUE 1*/
+
+
+.tarjeta{
+    width: 600px;
+    height: 300px;
+    display: flex;
+
+}
+
+/*ELEMENTo*/ 
+
+.tajeta__txtgrande{
+    margin: 10%;
+    padding: 20%;
+    border-radius: 20px;
+    background-color: rgb(221, 215, 215);
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.tarjeta__txtmediano{
+    margin: 10%;
+    padding: 20%;
+    border-radius: 20px;
+    background-color: rgb(221, 215, 215);
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tarjeta__txtchico{
+    margin: 10%;
+    padding: 20%;
+    border-radius: 20px;
+    background-color: rgb(221, 215, 215);
+    font-size: small;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+/*MODIFICADOR*/
+.tarjeta--roja {
+    color: crimson;
+   }
+  
+  .tarjeta--verde {
+    color: green;}
+  
+  .tarjeta--azul {
+    color: blue; }
+
+    ///////////////////////////////////////////////
+    /*
+    .grilla {
+        display: grid;
+        margin: 40px 0 40px 0;
+        grid-template-columns: repeat(4,25%);
+        grid-template-rows: repeat(4,250px);
+        gap: 1px 1px;
+        text-align: center;
+        justify-content: stretch;
+        font-size: 1.5rem;
+        grid-template-areas:
+        "bannerUno bannerUno bannerUno bannerUno"
+        "tarjetaUno tarjetaUno tarjetaDos tarjetaTres"
+        "tarjetaCuatro tarjetaCinco tarjetaCinco tarjetaTres"
+        "bannerUno bannerUno bannerUno bannerUno";
+    }
+
+    .bannerUno {
+       
+    }
+
+    .tarjetaUno {
+*/

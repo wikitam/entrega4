@@ -1,0 +1,134 @@
+/*****Metodologias*****/
+// solo sass
+
+//IMPORTACION
+@import "tipografia";
+@import "colores";
+@import "reseteo";
+@import "responsive";
+@import "bem";
+@import "generales";
+
+//Variables
+$color-principal: rgb(92, 109, 206);
+
+$color-secundario: rgb(255, 242, 242);
+
+$color-texto: rgba(87, 87, 87, 0.815);
+
+$texto-destacado: "Lobster Two", "roboto", "Open Sans", "Helvetica Neue";
+
+title {
+    font-family: 'Nunito', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    $color-secundario: cornsilk;
+}
+
+header{
+    font-family: $texto-destacado;
+    color: $color-principal;
+}
+
+
+$ancho: 1080px;
+
+div {
+    width: 100%;
+    article{
+        width: $ancho/2;
+        img{ 
+            width: $ancho/3;
+        }
+        h2{
+            width: ($ancho/2) - 50px;
+         }
+        p{
+            width: ($ancho/2) + 50px; 
+        } 
+    }
+}
+
+
+$desktop: 1440px;
+$tablet: 720px;
+$mobile: 480px; 
+
+div { 
+@if $ancho == $desktop {
+    background-color: #ccc;
+    }
+@else if $ancho == $tablet{
+    background-color: rgb(193, 252, 153)
+    ;
+}
+@else if $ancho == $mobile {
+    background-color: rgb(124, 136, 240);
+}
+@else {
+    background-color: rgb(119, 115, 115);}
+}
+
+
+article{ 
+h2{
+    color: $color-principal;
+    font-family: "Nunito", Helvetica, sans-serif;
+    font-size: 20px; 
+}
+
+p{ color: $color-texto;
+font-family: Arial, Helvetica, sans-serif;}}
+
+
+//mixin
+
+@mixin article_personalizado ( $fondo: rgb(255, 255, 255)) {
+    background-color: $fondo;
+    border: 3px solid rgb(166, 119, 241);
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px black;
+    color: $color-texto;
+    margin: 20px;
+}
+
+.article_dos{
+    @include article_personalizado( background-color rgb(131, 131, 131)
+     )
+}
+
+.article_tres {
+    @include article_personalizado( background-color rgb(69, 79, 226))
+}
+
+//operadores
+
+article, .article_dos, .article_tres {
+    width: 400px - 100px;
+}
+
+
+
+img {justify-content: stretch;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*
+footer{
+    list-style: none;
+    /*display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 1rem;
+    margin:1px;
+}*/
+
+h2{ 
+    color: cornflowerblue;
+    font-family: "Lobster Two", "roboto", "Open Sans", "Helvetica Neue";
+    font-size: 30px;
+    margin-right: 35px; 
+    margin-left: 50px;
+    margin-top: 50px;
+}

@@ -1,0 +1,36 @@
+
+*{ 
+    margin:0px;
+    padding:0px;
+}
+
+header{
+width: 1024px;
+height: 30px;
+background-color: cornflowerblue;
+font-size: 24px;
+text-align: center;
+}
+
+nav{
+    display: flex;
+    flex-grow: initial;
+    height: 40px;
+    width: 100%;
+    padding: 20px;
+    font-size: 20px;
+}
+
+body {
+    font-family: "Nunito", "Roboto", sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    display:contents;
+    justify-content: center;
+    font-family: "nunito";
+    }
+    
+

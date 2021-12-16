@@ -1,0 +1,63 @@
+@import "generales";
+@import "header";
+@import "grilla";
+@import "footer";
+@import "BEM";
+
+
+
+/***********
+Metodología BEM
+************/
+
+/* 
+BLOQUE
+ELEMENTO
+MODIFICADOR*/
+
+/* BLOQUE 1*/
+
+
+.tarjeta{
+    width: 600px;
+    display: flex;
+
+}
+
+/*ELEMENTo*/ 
+
+.tajeta__txtgrande{
+    border-radius: 20px;
+    background-color: rgb(221, 215, 215);
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.tarjeta__txtmediano{
+    border-radius: 20px;
+    background-color: rgb(221, 215, 215);
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tarjeta__txtchico{
+    border-radius: 20px;
+    background-color: rgb(221, 215, 215);
+    font-size: small;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+/*MODIFICADOR*/ 
+
+.tarjeta--roja {
+    stroke: crimson;
+    stroke-width: 3px;
+}
+.tarjeta--verde{
+    stroke: green;
+    stroke-width: 3px;
+}
+.tarjeta--azul {
+    stroke: blue;
+    stroke-width: 3px;
+}
